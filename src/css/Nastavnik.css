@@ -1,0 +1,131 @@
+/* Kontener za sve elemente unutar nastavnike komponente */
+.nastavnik-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    min-height: 100vh; 
+}
+
+
+/* Stil za naslove */
+.nastavnik-container h2, .nastavnik-container h3 {
+    color: #333; 
+    margin-bottom: 20px; /* Razmak ispod naslova */
+    
+}
+
+/* Kontener za forme */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Senka oko forme */
+    width: 80%; 
+    max-width: 400px; 
+    margin-bottom: 20px; 
+    text-align: center; /* Centriranje teksta unutar forme */
+}
+
+/* Stil za input polja unutar forme */
+.form-container input {
+    width: calc(100% - 22px); /* sirina inputa minus padding i border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Stil za dugme unutar forme */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Plava pozadina za dugme */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.form-container button:hover {
+    background-color: #0056b3; 
+}
+
+/* Tabela za prikaz nastavnika */
+.teacher-table {
+    width: 90%;
+    max-width: 800px; 
+    border-collapse: collapse; /* Spaja granice celija */
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Senka oko tabele */
+}
+
+/* Stil za naslove kolona tabele */
+.teacher-table th {
+    background-color: #f2f2f2; /* Svetla pozadina za naslove */
+    color: #333; /* Tamno siva boja za tekst */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Stil za celije tabele */
+.teacher-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Stil za dugmad u tabeli */
+.teacher-table td button {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; 
+    margin: 0 5px; /* Razmak između dugmadi */
+}
+
+
+
+.teacher-table td button:hover {
+    opacity: 0.8; /* Blago smanjivanje neprozirnosti pri hover */
+}
+/* Stil za tabelu kada je sklopljena */
+.teacher-table.collapsed {
+    display: none; /* Sakrij tabelu kada je sklopljena */
+}
+
+.subjects-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.search-field {
+    width: 300px;
+    margin-right: 20px;
+}
+.search-field .MuiOutlinedInput-root {
+    border-radius: 25px; /* Zaobljeni uglovi */
+}
+.search-field .MuiOutlinedInput-input {
+    padding: 10px 14px;
+}
+
+.search-field .MuiInputLabel-root {
+    top: -5px;
+}
+.subject-card {
+    background-color: #d1d0d0; /* Pozadina kartice */
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Senka */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Animacija senke */
+    margin: 16px;
+    padding: 16px;
+}
